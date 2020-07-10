@@ -3,6 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from plotter import plotCandleStick,plotMA
 from indicators import add_MACD,add_ATR,add_BollBnd,add_RSI,add_ADX,add_OBV
+from slope import add_slope
+
 import plotly.graph_objs as go
 stocks=["ITC.NS","RELIANCE.NS"]
 
@@ -24,6 +26,7 @@ add_BollBnd(data,20)
 add_RSI(data,14)
 add_ADX(data,14)
 add_OBV(data)
+add_slope(data,20)
 layout = dict(
                 title="ITC",
                 xaxis = dict(
