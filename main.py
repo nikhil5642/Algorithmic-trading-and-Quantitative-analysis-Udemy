@@ -1,0 +1,1 @@
+from algotrade.backtest import  strategy1

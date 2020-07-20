@@ -16,3 +16,6 @@ def add_slope(data,n):
 
     slope_angle=(np.rad2deg(np.arctan(np.array(slopes))))
     data["slope"]=np.array(slope_angle)
+    del slope_angle
+    del ser
+    del slopes
